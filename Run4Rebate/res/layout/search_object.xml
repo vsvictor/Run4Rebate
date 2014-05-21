@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_all" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_lepestok_main_left"
+        android:layout_marginTop="@dimen/margin_lepestok_main_top" >
+
+        <ImageView
+            android:id="@+id/imageBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lepestok_blue" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_toRightOf="@+id/button1"
+            android:text="Button" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:text="TextView" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignRight="@+id/imageBig"
+            android:layout_below="@+id/textView4"
+            android:max="5"
+            android:progress="0"
+            android:progressDrawable="@drawable/seekbar_track"
+            android:thumb="@drawable/thumb_scroll_meters" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignRight="@+id/imageBig" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageBig"
+            android:layout_alignRight="@+id/imageBig"
+            android:layout_marginBottom="@dimen/margin_button_left_top"
+            android:layout_marginRight="@dimen/margin_button_left_left"
+            android:background="@null"
+            android:onClick="AddSearchOnClick"
+            android:src="@drawable/button_add_search_blue" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_mask" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button_settings_left"
+        android:layout_marginTop="@dimen/margin_button_settings_top"
+        android:background="@null"
+        android:src="@drawable/button_settings" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonAddSearchAccount"
+        android:layout_toRightOf="@+id/buttonAddSearchAccount"
+        android:background="@null"
+        android:src="@drawable/button_menu" />
+
+    <ImageButton
+        android:id="@+id/buttonAddSearchAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button_add_search_left"
+        android:layout_marginTop="@dimen/margin_button_add_search_top"
+        android:background="@null"
+        android:onClick="AddSearchOnClick"
+        android:src="@drawable/button_account" />
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_all" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_lepestok_main_left"
+        android:layout_marginTop="@dimen/margin_lepestok_main_top" >
+
+        <ImageView
+            android:id="@+id/imageBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lepestok_orange" />
+
+        <LinearLayout
+            android:id="@+id/laMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonUslugi"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/button_menu_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onNewsClick"
+                android:paddingLeft="@dimen/menu_button_padding_text"
+                android:text="НОВОСТИ"
+                android:textColor="#6c4400"
+                android:textSize="@dimen/menu_button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/button_menu_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onBonusClick"
+                android:paddingLeft="@dimen/menu_button_padding_text"
+                android:text="БОНУСЫ"
+                android:textColor="#6c4400"
+                android:textSize="@dimen/menu_button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/button_menu_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onRulesClick"
+                android:paddingLeft="@dimen/menu_button_padding_text"
+                android:text="ПРАВИЛА"
+                android:textColor="#6c4400"
+                android:textSize="@dimen/menu_button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/button_menu_title"
+                android:gravity="left|center_vertical"
+                android:onClick="onInfoClick"
+                android:paddingLeft="@dimen/menu_button_padding_text"
+                android:text="О ПРИЛОЖЕНИИ"
+                android:textColor="#6c4400"
+                android:textSize="@dimen/menu_button_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mask_orange" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:background="@null"
+        android:onClick="SettingsOnClick"
+        android:src="@drawable/button_settings" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonAddSearchAccount"
+        android:layout_toRightOf="@+id/buttonAddSearchAccount"
+        android:background="@null"
+        android:onClick="AccountOncClick"
+        android:src="@drawable/account_menu_button" />
+
+    <ImageButton
+        android:id="@+id/buttonAddSearchAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button_add_search_left"
+        android:layout_marginTop="@dimen/margin_button_add_search_top"
+        android:background="@null"
+        android:onClick="AddSearchOnClick"
+        android:src="@drawable/button_add_search" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:src="@drawable/logo_all" />
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="@dimen/baner_width"
+        android:layout_height="@dimen/baner_height"
+        android:layout_alignBottom="@+id/buttonAddSearchAccount"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:gravity="left" >
+    </RelativeLayout>
+
+</RelativeLayout>

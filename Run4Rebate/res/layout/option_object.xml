@@ -1,0 +1,516 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_new"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_lepestok_main_left"
+        android:layout_marginTop="@dimen/margin_lepestok_main_top" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lepestok_blue2" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButton1"
+            android:layout_alignRight="@+id/imageView1"
+            android:paddingBottom="@dimen/margin_scroll_bottom" >
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                style="@style/scroll_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_social"
+                android:layout_marginTop="@dimen/subtext_margin_left" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <fragment
+                        android:id="@+id/map"
+                        android:layout_width="@dimen/option_map_mini_width"
+                        android:layout_height="@dimen/option_map_mini_height"
+                        android:layout_marginLeft="@dimen/margin_avatar_left"
+                        class="com.google.android.gms.maps.SupportMapFragment" />
+
+                    <ImageView
+                        android:id="@+id/imageView123"
+                         android:layout_width="@dimen/option_map_mini_width"
+                        android:layout_height="@dimen/option_map_mini_height"
+                        android:layout_marginLeft="@dimen/margin_avatar_left"
+                        android:background="@null" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/map"
+                        android:layout_marginLeft="@dimen/margin_avatar_left"
+                        android:layout_marginTop="@dimen/option_margin_top"
+                        android:fontFamily="verdana"
+                        android:text="НАЗВАНИЕ ОБЪЕКТА"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/add_text_size" />
+
+                    <TextView
+                        android:id="@+id/textObjectName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView2"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginTop="@dimen/option_sub_margin_top"
+                        android:text="ТЦ Ривьера"
+                        android:textColor="#09ebff"
+                        android:textSize="@dimen/text_size_name" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView2"
+                        android:layout_below="@+id/textObjectName"
+                        android:layout_marginTop="@dimen/option_sub_sub_margin_top"
+                        android:fontFamily="verdana"
+                        android:text="ТИП СКИДОК"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/add_text_size" />
+
+                    <TextView
+                        android:id="@+id/textTypeDiscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView2"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginTop="@dimen/option_sub_margin_top"
+                        android:text="Дисконтная"
+                        android:textColor="#09ebff"
+                        android:textSize="@dimen/add_text_size" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView2"
+                        android:layout_below="@+id/textTypeDiscount"
+                        android:layout_marginTop="@dimen/option_sub_sub_margin_top"
+                        android:fontFamily="verdana"
+                        android:text="РАЗМЕР СКИДОК"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/add_text_size" />
+
+                    <LinearLayout
+                        android:id="@+id/discountSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView4"
+                        android:layout_alignRight="@+id/map"
+                        android:layout_below="@+id/textView4"
+                        android:layout_marginTop="@dimen/option_sub_margin_top"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textFrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ОТ"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/add_percent_size" />
+
+                        <Button
+                            android:id="@+id/buttonFrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/percent_background"
+                            android:paddingBottom="@dimen/option_discount_type_padding_bottom"
+                            android:text="10%"
+                            android:textColor="#ff7107"
+                            android:textSize="@dimen/option_discount_type_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textTo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ДО"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/add_percent_size" />
+                        <Button
+                            android:id="@+id/buttonTo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/percent_background"
+                            android:paddingBottom="@dimen/option_discount_type_padding_bottom"
+                            android:text="25%"
+                            android:textColor="#ff7107"
+                            android:textSize="@dimen/option_discount_type_text_size"
+                            android:textStyle="bold"  />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_avatar_left"
+                        android:layout_marginTop="@dimen/option_sub_sub_margin_top"
+                        android:fontFamily="verdana"
+                        android:text="ТИП ОБЪЕКТА"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/add_text_size"
+                        android:layout_below="@+id/discountSize" />
+
+                    <TextView
+                        android:id="@+id/textObjectType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_avatar_left"
+                        android:layout_marginTop="@dimen/option_margin_top"
+                        android:layout_below="@+id/textView9"
+                        android:fontFamily="verdana"
+                        android:text="Торговый центр"
+                        android:textColor="#09ebff"
+                        android:textSize="@dimen/add_text_size" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/buttonCameraTake"
+                        android:layout_marginLeft="@dimen/margin_avatar_left"
+                        android:layout_marginTop="@dimen/option_photo_margin_top"
+                        android:fontFamily="verdana"
+                        android:text="ФОТО и ВИДЕО ОБЪЕКТА"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/add_text_size" />
+
+                    <ImageView
+                        android:id="@+id/buttonCameraTake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textObjectType"
+                        android:layout_marginLeft="@dimen/add_photo_margin"
+                        android:layout_marginTop="@dimen/option_sub_sub_margin_top"
+                        android:layout_toRightOf="@+id/textView10"
+                        android:onClick="LoadImageFromCameraOnClick"
+                        android:src="@drawable/button_blue_camera" />
+
+                    <ImageButton
+                        android:id="@+id/buttonImageTake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/buttonCameraTake"
+                        android:layout_marginLeft="@dimen/add_photo_margin"
+                        android:layout_toRightOf="@+id/buttonCameraTake"
+                        android:background="@null"
+                        android:onClick="LoadImageFromFileOnClick"
+                        android:src="@drawable/button_blue_image" />
+
+                    <Gallery
+                        android:id="@+id/gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/textView4"
+                        android:layout_below="@+id/buttonImageTake"
+                        android:layout_marginTop="@dimen/add_photo_margin"
+                        android:fadingEdge="horizontal"
+                        android:paddingBottom="@dimen/view_padding_left"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbarThumbHorizontal="@drawable/scrollbar_handle"
+                        android:scrollbarTrackHorizontal="@drawable/scrollbar_track"
+                        android:scrollbars="horizontal" />
+
+                    <ImageView
+                        android:id="@+id/devider1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/map"
+                        android:layout_below="@+id/gallery"
+                        android:layout_marginTop="@dimen/add_photo_margin"
+                        android:src="@drawable/blue_devider" />
+
+                    <LinearLayout
+                        android:id="@+id/social"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/map"
+                        android:layout_alignRight="@+id/devider1"
+                        android:layout_below="@+id/devider1"
+                        android:layout_marginTop="@dimen/add_objects_margin"
+                        android:gravity="center_horizontal" >
+                        
+						<ImageButton
+						    android:id="@+id/socialFb"
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+						    android:layout_below="@+id/devider1"
+						    android:background="@null"
+						    android:src="@drawable/button_social_facebook"
+						    android:layout_weight="1"
+						    android:scaleType="fitStart" />
+
+                    <ImageButton
+                        android:id="@+id/socialGP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/socialFb"
+                        android:layout_toRightOf="@+id/socialFb"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:src="@drawable/button_social_google" />
+
+                    <ImageButton
+                        android:id="@+id/socialTW"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/socialFb"
+                        android:layout_toRightOf="@+id/socialGP"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:src="@drawable/button_social_twitter" />
+
+                    <ImageButton
+                        android:id="@+id/socialPI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/socialFb"
+                        android:layout_toRightOf="@+id/socialGP"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:src="@drawable/button_social_pintrest" />
+
+                    <ImageButton
+                        android:id="@+id/socialVK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/socialFb"
+                        android:layout_toRightOf="@+id/socialTW"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:src="@drawable/button_social_vkontakte" />
+
+                    <ImageButton
+                        android:id="@+id/socialOK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/socialFb"
+                        android:layout_toRightOf="@+id/socialVK"
+                        android:background="@null"
+                        android:src="@drawable/button_social_odnoklassniki" 
+						    android:layout_weight="1" 
+						    android:scaleType="fitEnd" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/devider2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/map"
+                        android:layout_below="@+id/social"
+                        android:layout_marginTop="@dimen/add_objects_margin"
+                        android:src="@drawable/blue_devider" />
+
+                    <RelativeLayout
+                        android:id="@+id/commentsLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/map"
+                        android:layout_below="@+id/devider2" >
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/account_edit_margine_top"
+                            android:fontFamily="verdana"
+                            android:text="ОТЗЫВЫ ОБ ОБЪЕКТЕ"
+                            android:textColor="#ffbe0b"
+                            android:textSize="@dimen/text_size_name"
+                            android:textStyle="bold" />
+
+                        <ListView
+                            android:id="@+id/listComments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView11"
+                            android:divider="@drawable/blue_devider"
+                            android:fadeScrollbars="false"
+                            android:scrollbarAlwaysDrawVerticalTrack="true"
+                            android:scrollbarThumbVertical="@drawable/scrollbar_handle"
+                            android:scrollbarTrackVertical="@drawable/scrollbar_track" >
+                        </ListView>
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/listComments"
+                            android:layout_marginTop="@dimen/account_edit_margine_top"
+                            android:fontFamily="verdana"
+                            android:text="ОСТАВЬТЕ ОТЗЫВ ОБ ОБЪЕКТЕ:"
+                            android:textColor="#ffbe0b"
+                            android:textSize="@dimen/text_size_name" />
+
+                        <EditText
+                            android:id="@+id/editComments"
+                            android:layout_width="@dimen/add_objects_edit_width"
+                            android:layout_height="@dimen/coments_edit_height"
+                            android:layout_alignLeft="@+id/textView12"
+                            android:layout_below="@+id/textView12"
+                            android:background="#005994"
+                            android:inputType="textMultiLine"
+                            android:textColor="#ffbe0b"
+                            android:textSize="@dimen/text_size_name" />
+
+                        <Button
+                            android:id="@+id/buttonSaveComment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/editComments"
+                            android:layout_below="@+id/editComments"
+                            android:layout_marginTop="@dimen/margin_button_search_left"
+                            android:background="@drawable/save_comments"
+                            android:gravity="center_vertical|left"
+                            android:onClick="saveComment"
+                            android:paddingLeft="@dimen/padding_left_button_save"
+                            android:text="Сохранить отзыв"
+                            android:textColor="#6c4400"
+                            android:textSize="@dimen/text_size_button" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignRight="@+id/imageView1"
+            android:layout_marginBottom="@dimen/margin_button_left_top"
+            android:layout_marginRight="@dimen/margin_button_left_left"
+            android:background="@null"
+            android:onClick="AddSearchOnClick"
+            android:src="@drawable/button_add_search_blue" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mask_blue"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/buttonAddSearchAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button_add_search_left"
+        android:layout_marginTop="@dimen/margin_button_add_search_top"
+        android:background="@null"
+        android:onClick="AccountOnClick"
+        android:src="@drawable/button_account" />
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:background="@null"
+        android:onClick="SettingsOnClick"
+        android:src="@drawable/button_settings" />
+
+    <ImageView
+        android:id="@+id/imageBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageBig"
+        android:layout_alignTop="@+id/imageBig"
+        android:background="@null"
+        android:onClick="closeImage"
+        android:src="@drawable/button_close"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonAddSearchAccount"
+        android:layout_toRightOf="@+id/buttonAddSearchAccount"
+        android:background="@null"
+        android:onClick="MenuOnClick"
+        android:src="@drawable/button_menu" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:src="@drawable/logo_all" />
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/buttonAccount"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left" >
+    </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/mapBigLayout"
+     android:layout_width="wrap_content"
+     android:layout_height="fill_parent"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:visibility="invisible" >
+
+     <fragment
+         android:id="@+id/map2"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/map_big_height"
+         class="com.google.android.gms.maps.SupportMapFragment" />
+
+     <ImageButton
+         android:id="@+id/imageButton4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/map2"
+         android:layout_alignTop="@+id/map2"
+         android:layout_marginRight="@dimen/subtext_margin_left"
+         android:layout_marginTop="@dimen/icon_margine_top"
+         android:background="@null"
+         android:onClick="closeMapOnClick"
+         android:src="@drawable/button_close" />
+ </RelativeLayout>
+
+</RelativeLayout>

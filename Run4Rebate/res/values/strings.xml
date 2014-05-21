@@ -2,8 +2,123 @@
 <resources>
 
     <string name="app_name">Run4Rebate</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="imageView_description">Description to remove warning</string>
-    <string name="start_screen">SAVE ON REBATES. WE SHOW EXACT SPOTS.</string>    
+    <string name="app_id">167012983499692</string>
+    <string name="plus_generic_error">Вход с Google недоступен.</string>
+    <string name="title_about">О ПРИЛОЖЕНИИ</string>
+    <string name="about_app">О ПРИЛОЖЕНИИ</string>
+    <string name="app_about">О ПРИЛОЖЕНИИ</string>
+    <string name="imageView_description">description to remove warning</string>
+    <string name="start_screen">SAVE ON REBATES. WE SHOW EXACT SPOTS.</string>
+    <string name="news">NEWS</string>
+    <string name="getting_news">Getting news&#8230;</string>
+    <string name="your_bonuses">YOUR BONUSES</string>
+    <string name="bonuses">BONUSES</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="enter_address">Enter address</string>
+    <string name="enter_skype">Enter skype account</string>
+    <string name="save">SAVE</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="rules_button">RULES</string>
+    <string name="about">ABOUT Run4Rebate</string>
+    <string name="news_error">Getting news error</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="no_data">no data</string>
+    <string name="zero">0</string>
+    <string name="register_account">REGISTER ACCOUNT</string>
+    <string name="register">PLEASE, CHECK THE BOX, OTHERWISE WE CAN’T REGISTER YOU. WOULD YOU LIKE TO REGISTER?</string>
+    <string name="option">Выберите из списка</string>
+    <!-- <string name="rules_title">&lt;p>ПРАВИЛА сайта  &lt;br> и приложений  &lt;br> «Run4Rebate»&lt;/p></string> -->
+    <string name="rules_title">RULES AND &lt;br> PRIVACY POLICY</string>
+    <string name="rules_check">I READ THE RULES AND AGREE WITH IT</string>
+    <string name="rules">	    &lt;p>
+These Rules are as a consideration between «Run4Rebate» (as the «Run4Rebate») and a visitor (as User). Please, read it carefully!
+&lt;/p>&lt;p> 
+Registering at the «Run4Rebate» http://Run4Rebate.com (as the Site) or at the Application, You are confirming your agreement and complete understanding of the Rules.
+&lt;/p>&lt;p> 
+To use the Application «Run4Rebate» You must have a connection to Internet using any proper device.
+&lt;/p>&lt;p>
+Only registered by “Account - Registration” reference (on the proper page of the Application) visitors and who has got a private account can use all the functionality of the Application «Run4Rebate», actions etc., and collect points and do some operations to them described in the “Rules”. Otherwise, there will be some limitations in using the Application:
+&lt;/p>&lt;p>
+•	&lt;b>GUESTS&lt;/b> – unregistered users who can: &lt;br>
+A) visit Site and to run Application on own mobile device;&lt;br> 
+B) view news of Site and Application; &lt;br>
+C) view Places with rebates and the information about them;&lt;br>
+D) put rebate Places’ info into the dtabase – location, description, photos and videos, comments, references to Places’ resourses: social networks, pages etc. Applied for limited term.&lt;br>			
+E) leave a message for «Run4Rebate» administration for asking anything.&lt;br>
+F) put rebate Places’ info on social neworks’ timelines.&lt;br>
+&lt;/p>&lt;p>			
+•	&lt;b>USERS&lt;/b> – registered users who can:&lt;br>
+A) visit Site and to run Application on own mobile device;&lt;br> 
+B) view news of Site and Application; &lt;br>
+C) view Places with rebates and the information about them;&lt;br>
+D) put rebate Places’ info into the dtabase – location, description, photos and videos, comments, references to Places’ resourses: social networks, pages etc. Applied for long term.&lt;br>
+E) leave a message for «Run4Rebate» administration for asking anything.&lt;br>
+F) put rebate Places’ info on social neworks’ timelines.&lt;br>
+G) make a subscribe to the Site and Application news;&lt;br>
+H) use accumulated bonuses for changing them to some prizes (Pro).&lt;br>
+I) get push-notifiations about news of rebate Places (Pro). &lt;br>
+J) work offline – all the data got/sent can be shown at the Application (Pro).&lt;br>
+&lt;/p>&lt;p>
+All the information about Site and Application visitors are confidential. The «Run4Rebate» does not give this information about visitors and their accounts to any other persons.
+&lt;/p>&lt;p>
+On the Site and from the Application there is a possibility for the visitors to go to social networks for information exchange between the visitors, to meet each other, to put posts about the «Run4Rebate» etc. Administration of the «Run4Rebate» is not responsible for the visitors’ posts, all of them are to be moderated themselves.
+&lt;/p>&lt;p>
+If visitors break ethical, civil, criminal or other laws and App’s Rules, trying to post illegal (pornographic, nazism etc.) information, the Admibistration can terminate such visitors’ deeds without any explanations. To use any expletives and obscenities is strictly forbidden!
+&lt;/p>&lt;p>
+Visitors are fully responsible for their deeds with accounts and any operations within. Visitors must not to give any access to their accounts to other persons. Visitors must not to use other unauthorized programs to operate their accounts. Usage of additional computer programs for using Site or App is strictly prohibited.
+&lt;/p>&lt;p>
+All the operations with accumulated bonuses must be done by the Site’s or App’s software only. All the other kinds of operations with bonuses are forbidden. Bonuses which have been got by forbidden operations will be cancelled. If the Administration reveal any visitor’s attempt of using unauthorized software, it will cause this visitor’s account suspending and cancelling all of his bonuses.
+&lt;/p>&lt;p>
+Visitors are responsible for saving confident their logins, passwords etc. «Run4Rebate» is not responsible for any data placed in visitors’ accounts if visitors provide access to their accounts to other people. The Administration can suspend visitor’s account if he provides access to it to other people.
+&lt;/p>&lt;p>
+«Run4Rebate» strongly advise to save copies of accounts operations which are sent by email specified in registration procedure in the App.
+&lt;/p>&lt;p>
+The Administration can reject any operation with visitors’ bonuses if these Rules are broken. The Administration is watching all the visitors’ deeds at the Site and in App and can check them to approve and validate.
+&lt;/p>&lt;p> 
+Bonuses exchange takes place at the App, according to the “Rules of using private account”.
+&lt;/p>&lt;p>
+The Administration can reject operations with bonuses to any visitor and suspend his account at any moment, in case ov the Rules’ violation. If a disputable situation appears visitors can look to the Administration by any convenient way described in menu “Contacts” of the Site. In these situations the Administration’s decision is lawful, definitive and is not a subject to the appeal.
+&lt;/p>&lt;p> 
+Visitors should revise these Rules once a month at least, in case they have been changed. Visitors are restricted to register and to make any operations with bonuses and accounts if they do not understand their Rules and are not ready to obey them – either permanent or temporary ones. The Administration can change the Rules without any notice. The Administration can inform visitors about promo-actions and other changes. Admitting the Rules means that visitors have read them carefully and completely agreed with it.
+&lt;/p>
+&lt;br>		
+&lt;h3 style="text-align: center;">RULES of using private account «Run4Rebate»&lt;/h3>&lt;br>
+&lt;p>
+1. One person is allowed to have one own private account containing information about him to use all the Site’s or Application’s features. 
+Otherwise, the Administration of «Run4Rebate» can delete all the duplicates of accounts.
+&lt;/p>&lt;p>
+2. Registering at «Run4Rebate» any visitor must input his real personal information only. If the Administration of «Run4Rebate» finds a visitor distorting his information on purpose, his account will be suspended till the information is not corrected.
+&lt;/p>&lt;p>
+3. «Run4Rebate» is an interesting and exciting tool to save your time and money. A good tool is useful in arms of professional or trying hard person.
+&lt;/p>&lt;p>
+4. Every visitor of «Run4Rebate» is personally responsible for the information of his private account and photogallery. If there is a law infringement or ethical or other standards’ violation, the visitor who allows it is responsible for that. The Administration of «Run4Rebate» acts as moderator in this case and makes decision about such a visitor based on the Rules of this site.
+&lt;/p>&lt;p>
+5. Visitors of «Run4Rebate» are not allowed to make any mail distributions containing direct advertisings of their goods or services. Taking a part in forum of «Run4Rebate» is not allowed to contain direct advertisings of goods or services such as:&lt;br>
+•	any advertisings of “sale”, “buy”, “exchange”, “offer”, “visit”, “earn” etc. kinds;&lt;br>
+•	any graphical or html- banners;&lt;br>
+•	any included files containing advertisings.&lt;br>
+&lt;/p>&lt;p>
+Remember, that «Run4Rebate» is not a source of obtrusive advertisings.
+&lt;/p>&lt;p>
+6. Import into private accounts of e-mail lists, social networks’ information and any data taken or bought from open sources is strictly prohibited!
+If such an attempt is revealed, the visitor’s account will be permanently deleted without any permission to be created or opened again.
+&lt;/p>&lt;p>
+7. Any input information is not allowed to be a slander or “black-PR”. It has to correspond to the civil, criminal and ethical laws. Mail distributions containing pornographic, racism or violation scenes are strictly prohibited!
+&lt;/p>&lt;p>
+8. Any reference to «Run4Rebate» using SPAM or other kinds of advertising is strictly prohibited! Any subscriptions or smart automatic e-mail answering programs at «Run4Rebate» are prohibited!
+&lt;/p>&lt;p>
+9. The Administration of «Run4Rebate» can block any visitors’ accounts detected in violation of these Rules. The visitor can find out the reason of such blocking by making a query of the Administration of «Run4Rebate».
+&lt;/p>&lt;p>
+Here is the Privacy Policy reference:  &lt;a href=\"https://policy-portal.truste.com/core/privacy-policy/Run4Rebate/6fbc1e17-e29c-439e-9a02-9752ef958986\">https://policy-portal.truste.com/core/privacy-policy/Run4Rebate/6fbc1e17-e29c-439e-9a02-9752ef958986 &lt;/a>&lt;/p>
+</string>
+
+    <color name="color1">#2b87be</color>
+    <color name="color2">#005994</color>
+    <color name="color3">#ffffff</color>
+
 </resources>

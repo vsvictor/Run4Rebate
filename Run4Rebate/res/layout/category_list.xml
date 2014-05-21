@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/category_list_margin_text_left"
+        android:text="ЕДА И ГОСТИННИЦЫ"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/category_list_main" />
+
+    <TextView
+        android:id="@+id/recordId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/category_list_margin_text_left2"
+        android:text="- БАРЫ, РЕСТОРАНЫ, КАФЕ"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#18f7ff"
+        android:textColorLink="#18f7ff"
+        android:textSize="@dimen/category_list_sub" />
+
+</RelativeLayout>

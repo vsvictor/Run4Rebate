@@ -1,0 +1,398 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRegistration" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_lepestok_main_left"
+        android:layout_marginTop="@dimen/margin_lepestok_main_top" >
+
+        <ImageView
+            android:id="@+id/imageBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lepestok_red" />
+
+        <ImageView
+            android:id="@+id/imageAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/object_margin_text"
+            android:src="@drawable/avatar_noname" />
+
+        <ImageButton
+            android:id="@+id/buttonCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageAvatar"
+            android:layout_marginLeft="@dimen/registr_button_avatar_left"
+            android:background="@null"
+            android:onClick="imageButtonCameraOnClick"
+            android:src="@drawable/button_red_camera" />
+
+        <ImageButton
+            android:id="@+id/buttonImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageAvatar"
+            android:layout_alignLeft="@+id/buttonCamera"
+            android:background="@null"
+            android:onClick="imageButtonImageOnClick"
+            android:src="@drawable/button_red_image" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            style="@style/scroll_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/buttonRegistration"
+            android:layout_below="@+id/imageAvatar"
+            android:layout_marginBottom="@dimen/margin_scrol_bottom_reg"
+            android:fadeScrollbars="false"
+            android:paddingLeft="@dimen/padding_left_button_save"
+            android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/object_margin_text"
+                    android:background="@drawable/button_account_save"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="AccountLoginOnClick"
+                    android:text="ВОЙТИ В АККАУНТ"
+                    android:textColor="#6c4400"
+                    android:textSize="@dimen/registr_text_login" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buttonLogin"
+                    android:layout_marginLeft="@dimen/registr_left_margine"
+                    android:layout_marginTop="@dimen/object_margin_text"
+                    android:fontFamily="verdana"
+                    android:text="РЕГИСТРАЦИЯ АККАУНТА"
+                    android:textColor="#f6ea24"
+                    android:textSize="@dimen/registr_text_size" />
+
+                <TextView
+                    android:id="@+id/textNameReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_below="@+id/socialFb"
+                    android:layout_marginTop="@dimen/object_margin_text"
+                    android:text="Ф.И.О"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_name"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editNameReg"
+                    android:layout_width="@dimen/size_edit_text_width_reg"
+                    android:layout_height="@dimen/size_edit_text_height"
+                    android:layout_alignLeft="@+id/textNameReg"
+                    android:layout_alignRight="@+id/socialOK"
+                    android:layout_below="@+id/textNameReg"
+                    android:layout_marginTop="@dimen/object_margin_edit"
+                    android:background="#7b0000"
+                    android:fontFamily="verdana"
+                    android:inputType="textPersonName"
+                    android:textColor="#f6ea24"
+                    android:textColorHint="#972929"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/text_size_name" />
+
+                <TextView
+                    android:id="@+id/textLoginReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_below="@+id/editNameReg"
+                    android:layout_marginTop="@dimen/object_margin_text"
+                    android:text="ЛОГИН"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_name"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editLoginReg"
+                    android:layout_width="@dimen/size_edit_text_width_reg"
+                    android:layout_height="@dimen/size_edit_text_height"
+                    android:layout_alignLeft="@+id/textLoginReg"
+                    android:layout_alignRight="@+id/editNameReg"
+                    android:layout_below="@+id/textLoginReg"
+                    android:layout_marginTop="@dimen/object_margin_edit"
+                    android:background="#7b0000"
+                    android:fontFamily="verdana"
+                    android:inputType="textPersonName"
+                    android:textColor="#f6ea24"
+                    android:textColorHint="#972929"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/text_size_name" />
+
+                <TextView
+                    android:id="@+id/textPasswordReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_below="@+id/editLoginReg"
+                    android:layout_marginTop="@dimen/object_margin_text"
+                    android:text="ПАРОЛЬ"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_name"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editPasswordReg"
+                    android:layout_width="@dimen/size_edit_text_width_reg"
+                    android:layout_height="@dimen/size_edit_text_height"
+                    android:layout_alignLeft="@+id/textPasswordReg"
+                    android:layout_alignRight="@+id/editNameReg"
+                    android:layout_below="@+id/textPasswordReg"
+                    android:layout_marginTop="@dimen/object_margin_edit"
+                    android:background="#7b0000"
+                    android:fontFamily="verdana"
+                    android:inputType="textPassword"
+                    android:textColor="#f6ea24"
+                    android:textColorHint="#972929"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/text_size_name" />
+
+                <ImageButton
+                    android:id="@+id/socialFb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginLeft="@dimen/registr_social_left"
+                    android:layout_marginRight="@dimen/margin_social"
+                    android:layout_marginTop="@dimen/object_margin_text"
+                    android:background="@null"
+                    android:onClick="fbOnClick"
+                    android:src="@drawable/button_social_facebook" />
+
+                <ImageButton
+                    android:id="@+id/socialGP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/socialFb"
+                    android:layout_marginRight="@dimen/margin_social"
+                    android:layout_toRightOf="@+id/socialFb"
+                    android:background="@null"
+                    android:onClick="gpOnClick"
+                    android:src="@drawable/button_social_google" />
+
+                <ImageButton
+                    android:id="@+id/socialTW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/socialFb"
+                    android:layout_marginRight="@dimen/margin_social"
+                    android:layout_toRightOf="@+id/socialGP"
+                    android:background="@null"
+                    android:onClick="twOnClick"
+                    android:src="@drawable/button_social_twitter" />
+
+                <ImageButton
+                    android:id="@+id/socialVK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/socialFb"
+                    android:layout_marginRight="@dimen/margin_social"
+                    android:layout_toRightOf="@+id/socialTW"
+                    android:background="@null"
+                    android:onClick="vkOnClick"
+                    android:src="@drawable/button_social_vkontakte" />
+
+                <ImageButton
+                    android:id="@+id/socialOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/socialFb"
+                    android:layout_toRightOf="@+id/socialVK"
+                    android:background="@null"
+                    android:onClick="okOnClick"
+                    android:src="@drawable/button_social_odnoklassniki" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editEmailReg"
+                    android:layout_alignRight="@+id/editEmailReg"
+                    android:layout_below="@+id/editEmailReg"
+                    android:layout_marginTop="@dimen/margine_social_top_reg"
+                    android:src="@drawable/red_devider" />
+
+                <TextView
+                    android:id="@+id/textEmailReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_below="@+id/editPasswordReg"
+                    android:layout_marginTop="@dimen/object_margin_text"
+                    android:text="E-MAIL"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_name"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editEmailReg"
+                    android:layout_width="@dimen/size_edit_text_width_reg"
+                    android:layout_height="@dimen/size_edit_text_height"
+                    android:layout_alignLeft="@+id/editNameReg"
+                    android:layout_alignRight="@+id/editNameReg"
+                    android:layout_below="@+id/textEmailReg"
+                    android:layout_marginTop="@dimen/object_margin_edit"
+                    android:background="#7b0000"
+                    android:drawableLeft="@drawable/icon_email"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="verdana"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/view_padding_left"
+                    android:textColor="#f6ea24"
+                    android:textColorHint="#972929"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/text_size_name" />
+
+                <EditText
+                    android:id="@+id/editPhoneReg"
+                    android:layout_width="@dimen/size_edit_text_width_reg"
+                    android:layout_height="@dimen/size_edit_text_height"
+                    android:layout_alignLeft="@+id/editNameReg"
+                    android:layout_alignRight="@+id/editNameReg"
+                    android:layout_below="@+id/editEmailReg"
+                    android:layout_marginTop="@dimen/object_margin_edit_data"
+                    android:background="#7b0000"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="verdana"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/view_padding_left"
+                    android:textColor="#f6ea24"
+                    android:textColorHint="#972929"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/text_size_name" />
+
+                <EditText
+                    android:id="@+id/editAddressReg"
+                    android:layout_width="@dimen/size_edit_text_width_reg"
+                    android:layout_height="@dimen/size_edit_text_height"
+                    android:layout_alignLeft="@+id/editNameReg"
+                    android:layout_alignRight="@+id/editNameReg"
+                    android:layout_below="@+id/editPhoneReg"
+                    android:layout_marginTop="@dimen/object_margin_edit_data"
+                    android:background="#7b0000"
+                    android:drawableLeft="@drawable/icon_pin"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="verdana"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/view_padding_left"
+                    android:textColor="#f6ea24"
+                    android:textColorHint="#972929"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/text_size_name" />
+
+                <EditText
+                    android:id="@+id/editSkypeReg"
+                    android:layout_width="@dimen/size_edit_text_width_reg"
+                    android:layout_height="@dimen/size_edit_text_height"
+                    android:layout_alignLeft="@+id/editNameReg"
+                    android:layout_alignRight="@+id/editNameReg"
+                    android:layout_below="@+id/editAddressReg"
+                    android:layout_marginTop="@dimen/object_margin_edit_data"
+                    android:background="#7b0000"
+                    android:drawableLeft="@drawable/icon_skype"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="verdana"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/view_padding_left"
+                    android:textColor="#f6ea24"
+                    android:textColorHint="#972929"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/text_size_name" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buttonRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageBig"
+            android:layout_alignRight="@+id/scrollView1"
+            android:layout_marginBottom="@dimen/registr_button_bottom_margin"
+            android:background="@drawable/button_account_registr"
+            android:gravity="left|center_vertical"
+            android:onClick="AccountRegistrationOnClick"
+            android:paddingLeft="@dimen/registr_button_padding_text"
+            android:text="ЗАРЕГИСТРИРОВАТЬ АККАУНТ"
+            android:textColor="#6c4400"
+            android:textSize="@dimen/registr_text_registration" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_mask" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:background="@null"
+        android:src="@drawable/button_settings" />
+
+    <ImageButton
+        android:id="@+id/buttonAddSearchAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button_add_search_left"
+        android:layout_marginTop="@dimen/margin_button_add_search_top"
+        android:background="@null"
+        android:onClick="AddSearchOnClick"
+        android:src="@drawable/button_add_search" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:src="@drawable/logo_all" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonAddSearchAccount"
+        android:layout_toRightOf="@+id/buttonAddSearchAccount"
+        android:background="@null"
+        android:src="@drawable/button_menu" />
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="@dimen/baner_width"
+        android:layout_height="@dimen/baner_height"
+        android:layout_alignBottom="@+id/buttonAddSearchAccount"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentBottom="false"
+        android:gravity="left" >
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_lepestok_main_left"
+        android:layout_marginTop="@dimen/margin_lepestok_main_top" >
+
+        <ImageView
+            android:id="@+id/imageBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lepestok_blue_main" />
+
+        <ImageButton
+            android:id="@+id/buttonSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button_search_left"
+            android:layout_marginTop="@dimen/margin_button_search_top"
+            android:background="@null"
+            android:onClick="SearchOnClick"
+            android:src="@drawable/main_button_search" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/imageBig"
+            android:layout_marginRight="@dimen/text_left"
+            android:layout_marginTop="@dimen/text_top"
+            android:fontFamily="verdana"
+            android:text="НАЙТИ СКИДКИ"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_main"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignRight="@+id/imageBig"
+            android:layout_below="@+id/textView1"
+            android:layout_marginRight="@dimen/subtext_margin_left"
+            android:layout_marginTop="@dimen/subtext_margin_top"
+            android:gravity="left"
+            android:text="ТУТ ВЫ НАЙДЕТЕ МЕСТА С ПРЕДЛОЖЕНИЯМИ СКИДОК ПО ВАШИМ ЗАПРОСАМ"
+            android:textColor="#18f7ff"
+            android:textSize="@dimen/text_size_button" />
+
+        <ImageButton
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageBig"
+            android:layout_alignRight="@+id/imageBig"
+            android:layout_marginBottom="@dimen/margin_button_add_top"
+            android:layout_marginRight="@dimen/margin_button_add_left"
+            android:background="@null"
+            android:onClick="AddOnClick"
+            android:src="@drawable/main_button_add" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView4"
+            android:layout_marginLeft="@dimen/subtext_margin_top"
+            android:fontFamily="verdana"
+            android:text="ДОБАВИТЬ СКИДКИ"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_main"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageBig"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_marginBottom="@dimen/text_top_add"
+            android:layout_marginLeft="@dimen/subtext_margin_left_add"
+            android:layout_marginTop="@dimen/subtext_margin_top"
+            android:gravity="right"
+            android:text="ТУТ МОЖНО ДОБАВИТЬ МЕСТА СО СКИДКАМИ И ИХ УВИДЯТ ВСЕ"
+            android:textColor="#18f7ff"
+            android:textSize="@dimen/text_size_button" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonAddSearchAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@drawable/main_button_account"
+        android:fontFamily="verdana"
+        android:onClick="AccountOnClick"
+        android:paddingTop="@dimen/buttona_account_text_padding"
+        android:text="АККАУНТ"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_account" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAddSearchAccount"
+        android:layout_toRightOf="@+id/relativeLayout1"
+        android:background="@null"
+        android:onClick="SettingsOnClick"
+        android:src="@drawable/main_button_settings" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignTop="@+id/buttonAddSearchAccount"
+        android:background="@null"
+        android:onClick="MenuOnClick"
+        android:src="@drawable/main_button_menu" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:src="@drawable/logo_all" />
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonAddSearchAccount"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+    </RelativeLayout>
+
+</RelativeLayout>

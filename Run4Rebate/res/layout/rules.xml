@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_all"
+    tools:context=".ActivityRules" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_lepestok_main_left"
+        android:layout_marginTop="@dimen/margin_lepestok_main_top" >
+
+        <ImageView
+            android:id="@+id/imageBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lepestok_orange" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margine_text_left_reg"
+            android:paddingLeft="@dimen/padding_left_button_save"
+            android:paddingTop="@dimen/margin_scroll_bottom"
+            android:text="@string/rules_title"
+            android:textSize="@dimen/text_size_main"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/rules_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/checkBox1"
+            android:layout_alignRight="@+id/imageBig"
+            android:layout_below="@+id/textView1"
+            android:layout_marginBottom="@dimen/rules_list_margin_height"
+            android:layout_marginTop="@dimen/rules_list_margin_height"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadeScrollbars="false"
+            android:paddingLeft="@dimen/rules_list_margin_width"
+            android:paddingRight="@dimen/rules_list_margin_width"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarThumbVertical="@drawable/scrollbar_handle"
+            android:scrollbarTrackVertical="@drawable/scrollbar_track" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margine_text_left_reg"
+                    android:text="@string/rules"
+                    android:textSize="@dimen/subtext_size_main" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButton4"
+            android:layout_alignRight="@+id/imageButton4"
+            android:layout_marginBottom="@dimen/margin_scroll_bottom"
+            android:layout_marginLeft="@dimen/check_box_left_margine"
+            android:button="@drawable/check_box_selector"
+            android:checked="false"
+            android:paddingLeft="@dimen/margin_bonuses_text_top"
+            android:text="@string/rules_check"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/subtext_size_main" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageBig"
+            android:layout_alignRight="@+id/imageBig"
+            android:layout_marginBottom="@dimen/rules_button_back_bottom_margin"
+            android:layout_marginRight="@dimen/rules_button_back_right_margin"
+            android:background="@null"
+            android:onClick="MenuBackOnClick"
+            android:src="@drawable/button_arrow_back" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mask_orange" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:background="@null"
+        android:onClick="SettingsOnClick"
+        android:src="@drawable/button_settings" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonAddSearchAccount"
+        android:layout_toRightOf="@+id/buttonAddSearchAccount"
+        android:background="@null"
+        android:onClick="AccountOncClick"
+        android:src="@drawable/account_menu_button" />
+
+    <ImageButton
+        android:id="@+id/buttonAddSearchAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button_add_search_left"
+        android:layout_marginTop="@dimen/margin_button_add_search_top"
+        android:background="@null"
+        android:onClick="AddSearchOnClick"
+        android:src="@drawable/button_add_search" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:src="@drawable/logo_all" />
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="@dimen/baner_width"
+        android:layout_height="@dimen/baner_height"
+        android:layout_alignBottom="@+id/buttonAddSearchAccount"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:gravity="left" >
+
+    </RelativeLayout>
+
+</RelativeLayout>

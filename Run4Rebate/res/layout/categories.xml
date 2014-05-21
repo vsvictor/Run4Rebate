@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_all" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_lepestok_main_left"
+        android:layout_marginTop="@dimen/margin_lepestok_main_top" >
+
+        <ImageView
+            android:id="@+id/imageBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lepestok_blue" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/speakButton"
+            android:layout_alignLeft="@+id/imageBig"
+            android:layout_alignRight="@+id/imageBig"
+            android:orientation="vertical"
+            android:weightSum="200" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/categories_title_left_margin"
+                android:layout_marginTop="@dimen/categories_title_top_margin"
+                android:layout_weight="0"
+                android:background="@drawable/categories_title"
+                android:text="УСЛУГИ"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/categories_title_text_size"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/categories_devider"
+                android:layout_marginLeft="@dimen/categories_list_margin_left"
+                android:layout_marginTop="@dimen/categories_devider"
+                android:paddingLeft="@dimen/categories_list_padding_left"
+                android:src="@drawable/blue_devider_categories" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/categories_list_padding_left"
+                android:layout_weight="108"
+                android:background="@null"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadeScrollbars="false"
+                android:paddingLeft="@dimen/categories_list_padding_left"
+                android:paddingRight="@dimen/categories_list_padding_left"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarThumbVertical="@drawable/scrollbar_handle"
+                android:scrollbarTrackVertical="@drawable/scrollbar_track" >
+            </ListView>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/categories_title_left_margin"
+                android:layout_marginTop="@dimen/categories_title_top_margin"
+                android:layout_weight="0"
+                android:background="@drawable/categories_title"
+                android:text="ТОВАРЫ"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/categories_title_text_size"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/categories_devider"
+                android:layout_marginLeft="@dimen/categories_list_margin_left"
+                android:layout_marginTop="@dimen/categories_devider"
+                android:layout_weight="0"
+                android:paddingLeft="@dimen/categories_list_padding_left"
+                android:src="@drawable/blue_devider_categories" />
+
+            <ListView
+                android:id="@+id/list2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/categories_list_padding_right"
+                android:layout_weight="105"
+                android:background="@null"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadeScrollbars="false"
+                android:paddingLeft="@dimen/categories_list_padding_left"
+                android:paddingRight="@dimen/categories_list_padding_right"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarThumbVertical="@drawable/scrollbar_handle"
+                android:scrollbarTrackVertical="@drawable/scrollbar_track" >
+            </ListView>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/speakButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageBig"
+            android:layout_alignRight="@+id/imageBig"
+            android:layout_marginBottom="@dimen/margin_button_left_top"
+            android:layout_marginRight="@dimen/margin_button_left_left"
+            android:background="@null"
+            android:src="@drawable/button_microphone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_mask" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:background="@null"
+        android:onClick="SettingsOnCLick"
+        android:src="@drawable/button_settings" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonAddSearchAccount"
+        android:layout_toRightOf="@+id/buttonAddSearchAccount"
+        android:background="@null"
+        android:onClick="MenuOnClick"
+        android:src="@drawable/button_menu" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:src="@drawable/logo_all" />
+
+    <ImageButton
+        android:id="@+id/buttonAddSearchAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_button_add_search_left"
+        android:layout_marginTop="@dimen/margin_button_add_search_top"
+        android:background="@null"
+        android:onClick="AccountOnClick"
+        android:src="@drawable/button_account" />
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="@dimen/baner_width"
+        android:layout_height="@dimen/baner_height"
+        android:layout_alignBottom="@+id/buttonAddSearchAccount"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:gravity="left" >
+    </RelativeLayout>
+
+</RelativeLayout>
